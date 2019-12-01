@@ -1,0 +1,4 @@
+CXX = clang++
+&ranges_dir = deps/range-v3/include
+
+!cxx = |> $(CXX) -g -fdiagnostics-color -o %o %f -I &(ranges_dir) -std=c++17 |>
