@@ -9,6 +9,6 @@ halt:{` 0:,$*data;."\\\\"}
 
 cmds:1 2 99!(+;*;halt)
 / exec[] executes the commands in data
-exec:{{data[a 3]:cmds[*a]/data@1_3#a:4#x_data}'4*!1+_(#data)%4}
+exec:{{data[a 3]:cmds[*a]/data@1_3#a:4#x_data}'4*!1+4 div#data}
 
 exec[]
