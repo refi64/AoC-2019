@@ -1,4 +1,6 @@
+CC = clang
 CXX = clang++
 &ranges_dir = deps/range-v3/include
 
+!cc = |> $(CC) -g -fdiagnostics-color -o %o %f -std=gnu99 |>
 !cxx = |> $(CXX) -g -fdiagnostics-color -o %o %f -I &(ranges_dir) -std=c++17 |>

@@ -17,7 +17,6 @@ shared:{y@&~(#x)=x?y}
 / idist[wires] shortest distance from origin to closest intersection
 idist:(&/+/'abs shared . tracewire')
 
-/ {t@'+|(,!:'x),,!2}'(t)?\:/:abs shared . t:tracewire'wires
 isteps:{&/+/'1+t?\:/:shared . t:tracewire'x}
 
 part1:{idist wires}
